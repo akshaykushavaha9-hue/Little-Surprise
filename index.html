@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fff0f5"><title>A Little Surprise 🌸</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:22px;background:radial-gradient(circle at top,#fff 0,#fff0f5 48%,#ffe2ec 100%);font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#633b50;text-align:center;overflow-x:hidden}.card{width:min(100%,430px);padding:30px 22px 28px;background:#ffffffd9;border:1px solid #fff;border-radius:28px;box-shadow:0 18px 55px #a64c7220}.tag{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#c06b91}.bouquet{height:190px;display:flex;align-items:center;justify-content:center;position:relative;margin:8px 0 12px}.flower{position:absolute;font-size:70px;filter:drop-shadow(0 8px 5px #8c527522);animation:float 3s ease-in-out infinite}.f1{transform:translate(-65px,4px) rotate(-14deg);font-size:65px;animation-delay:.2s}.f2{transform:translate(0,-25px);font-size:82px}.f3{transform:translate(65px,5px) rotate(13deg);font-size:65px;animation-delay:.5s}.f4{transform:translate(-3px,62px);font-size:45px;animation-delay:.8s}@keyframes float{0%,100%{translate:0 0}50%{translate:0 -9px}}h1{font-size:clamp(27px,7vw,35px);margin:8px 0 10px;color:#a64e76}.sub{font-size:15px;line-height:1.6;margin:0 auto 22px;max-width:310px;color:#79576a}button{border:0;border-radius:999px;padding:14px 24px;font-size:16px;font-weight:700;background:#d96f9b;color:white;box-shadow:0 8px 18px #d96f9b45;cursor:pointer;transition:transform .2s}button:active{transform:scale(.97)}.message{display:none;margin:22px auto 0;padding:18px 16px;background:#fff4f8;border-radius:18px;line-height:1.7;font-size:16px;animation:appear .5s ease}.message.show{display:block}@keyframes appear{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}.heart{color:#e66b99}.small{font-size:12px;color:#b08097;margin-top:22px}
+</style>
+</head>
+<body><main class="card">
+<div class="tag">just a little something</div>
+<div class="bouquet" aria-label="A bouquet of flowers"><span class="flower f1">🌷</span><span class="flower f2">🌸</span><span class="flower f3">🌷</span><span class="flower f4">🌼</span></div>
+<h1>Hey, you! ✨</h1>
+<p class="sub">Someone thought you deserved a tiny, happy surprise today.</p>
+<button id="openBtn">Open your surprise 💌</button>
+<div class="message" id="message">I don't need a special occasion to say this — I hope your day is as lovely as your smile. Keep being you. <span class="heart">♥</span><br><br><strong>Have a beautiful day!</strong> 🌷</div>
+<div class="small">Made to make you smile ♡</div>
+</main><script>
+document.getElementById('openBtn').addEventListener('click',function(){document.getElementById('message').classList.add('show');this.textContent='Surprise opened! 💗';this.disabled=true;});
+</script></body></html>
